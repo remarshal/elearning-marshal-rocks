@@ -5,20 +5,20 @@ const register = () => {
       <div className="container col-md-4 offset-md-4">
         <form>
           <div className="mb-3">
-            <label for="firstName" className="form-label">First name</label>
-            <input type="text" className="form-control" />
+            <label for="firstName" className="form-label">First name*</label>
+            <input type="text" className="form-control" required />
           </div>
           <div className="mb-3">
-            <label for="exampleInputEmail1" className="form-label">Email address</label>
-            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <label for="email" className="form-label">Email address*</label>
+            <input type="email" className="form-control" aria-describedby="emailHelp" required />
             
           </div>
           <div className="mb-3">
-            <label for="exampleInputPassword1" className="form-label">Password</label>
-            <input type="password" className="form-control" />
+            <label for="password" className="form-label">Password*</label>
+            <input type="password" className="form-control" required />
           </div>
           <div className="mb-3 form-check">
-            <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+            <input type="checkbox" className="form-check-input" />
             <label className="form-check-label" for="newsletterCheck">Yes!  Sign me up for the newsletter!</label>
           </div>
           <button type="submit" className="btn btn-primary">Register</button>
