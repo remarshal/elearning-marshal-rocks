@@ -1,6 +1,11 @@
 .jumbotron {
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    background-color: #e9ecef;
-    border-radius: 0;
-  }
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0;
+}
+
+.hero {
+  color: #d90429;
+  font-weight: bold;
+}
