@@ -1,10 +1,8 @@
 import express from "express";
-import { model } from "mongoose";
+import {register} from '../controllers/auth'
 
 const router = express.Router();
 
-router.get("/register", (req, res) => {
-  res.send("register user");
-});
+router.get("/register", register);
 
 module.exports = router;
