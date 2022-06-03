@@ -5,7 +5,7 @@ const register = () => {
   const [firstName, setFirstname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [checkbox, setCheckbox] = useState(false);
+  const [newsletter, setNewsletter] = useState(false);
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -33,8 +33,8 @@ const register = () => {
             <input type="password" className="form-control" value={password} onChange={event => setPassword(event.target.value)} required />
           </div>
           <div className="mb-3 form-check">
-            <input type="checkbox" className="form-check-input" value={checkbox} onChange={event => setCheckbox(event.target.value)} />
-            <label className="form-check-label" for="newsletterCheck">Yes!  Sign me up for the newsletter!</label>
+            <label for="newsletter" className="form-check-label">Yes!  Sign me up for the newsletter!</label>
+            <input type="checkbox" className="form-check-input" value={newsletter} onChange={event => setNewsletter(event.target.value)} />
           </div>
           <button type="submit" className="btn btn-primary">Register</button>
           <div className="form-text">I'll never share your information because I'm not a jerk.</div>
