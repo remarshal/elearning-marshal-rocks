@@ -1,8 +1,8 @@
 const login = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.table({ firstName, email, password, checkbox });
-  };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   console.table({ firstName, email, password, checkbox });
+  // };
 
   return (
     <div>
@@ -11,11 +11,11 @@ const login = () => {
         <form>
           <div className="mb-3">
             <label for="email" className="form-label">Email address*</label>
-            <input type="email" className="form-control" aria-describedby="emailHelp" value={email} onChange={event => setEmail(event.target.value)} required />
+            {/* <input type="email" className="form-control" aria-describedby="emailHelp" value={email} onChange={event => setEmail(event.target.value)} required /> */}
           </div>
           <div className="mb-3">
             <label for="password" className="form-label">Password*</label>
-            <input type="password" className="form-control" value={password} onChange={event => setPassword(event.target.value)} required />
+            {/* <input type="password" className="form-control" value={password} onChange={event => setPassword(event.target.value)} required /> */}
           </div>
           <button type="submit" className="btn btn-primary">Let Me In</button>
         </form>

@@ -9,8 +9,8 @@ const register = () => {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    // console.table({ firstName, email, password, checkbox });
-    const { data } = await axios.post(`http://localhost:8000/api/register`, {firstName, email, password, checkbox});
+    // console.table({ firstName, email, password, newsletter });
+    const { data } = await axios.post(`http://localhost:8000/api/register`, {firstName, email, password, newsletter});
     console.log("REGISTER RESPONSE", data);
   }
 
